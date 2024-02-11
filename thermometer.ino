@@ -1,12 +1,24 @@
+#include <DallasTemperature.h>
+#include <OneWire.h>
+
+#define ONE_WIRE_PIN 2
+
+OneWire oneWire(ONE_WIRE_PIN);
+DallasTemperature sensors(&oneWire);
+
 void setup()
 {
-    pinMode(LED_BUILTIN, OUTPUT);
+    // Start UART communication
+    Serial.begin(9600);
+    // Start DS18B20 sensor
+    sensors.begin();
+    Serial.println("Setup done.");
 }
 
 void loop()
 {
-    digitalWrite(LED_BUILTIN, HIGH);
-    delay(500);
-    digitalWrite(LED_BUILTIN, LOW);
-    delay(500);
+    sensors.requestTemperatures();
+    Serial.print("Temp: ");
+    Serial.println(sensors.getTempCByIndex(0));
+    delay(1000);
 }
