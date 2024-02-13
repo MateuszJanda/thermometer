@@ -71,13 +71,13 @@ void loop()
     float temperature = temp_sensor.getTempCByIndex(DEVICE_INDEX);
     Serial.println("Temp: " + String(temperature) + "C");
 
-    // Display temperature value in Celsius
+    // Display temperature value (in Celsius)
     display.clearDisplay();
     display.setTextSize(3);
     display.setCursor(0, 0);
     display.println(String(temperature) + "C");
 
-    // Print unique (64-bit) temperature sensor ID (on 1-Wire)
+    // Display unique (64-bit) temperature sensor ID (on 1-Wire)
     display.setTextSize(1);
     display.setCursor(0, 48);
     display.print("Dev" + String(DEVICE_INDEX) + ":");

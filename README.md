@@ -1,11 +1,13 @@
-# Info
+# About
 
 
 # Hardware
 - DS18B20 Programmable Resolution 1-Wire Digital Thermometer
+- SSD1306 Display - 0.96inch OLED (B) - connected to 4-wire SPI (default case)
 
 # Setup
 
+Install required libraries.
 In Arduino IDE (2.3.0) | Sketch | Include Library | Manage Libraries...
 
 For DS18B20 thermometer:
@@ -17,3 +19,4 @@ For SSD1306 display:
 
 # References
 - [WaveShare 0.96inch OLED (B)](https://www.waveshare.com/wiki/0.96inch_OLED_%28B%29#User_Guides_for_Arduino)
+- [Arduino UNO - co to jest?](https://forbot.pl/blog/leksykon/arduino-uno)
