@@ -15,7 +15,7 @@ DallasTemperature temp_sensor(&one_wire);
 #define OLED_SCREEN_WIDTH 128
 #define OLED_SCREEN_HEIGHT 64
 
-// Declaration for SSD1306 display connected using software 4-wire SPI (default case):
+// Declaration for SSD1306 display connected using software 4-wire SPI (default case)
 #define OLED_MOSI_PIN 11
 #define OLED_SCLK_PIN 13
 #define OLED_CS_PIN 10
@@ -31,7 +31,7 @@ char device_address_str[20] = {};
 
 void setup()
 {
-    // Start UART baud (communication speed)
+    // Start UART. Set baud (communication speed)
     Serial.begin(9600);
 
     // Start DS18B20 sensor
@@ -39,8 +39,7 @@ void setup()
     Serial.println("Temperature sensor setup done.");
 
     // Read unique (64-bit) temperature sensor ID (on 1-Wire)
-    bool result = temp_sensor.getAddress(device_address, DEVICE_INDEX);
-    if (result) {
+    if (temp_sensor.getAddress(device_address, DEVICE_INDEX)) {
         device_address_to_string();
         Serial.print("Temperature sensor ID: ");
         Serial.println(device_address_str);
@@ -49,14 +48,14 @@ void setup()
     }
 
     // Start SSD1306 display.
-    // SSD1306_SWITCHCAPVCC = generate display voltage from 3.3V internally
+    // SSD1306_SWITCHCAPVCC == generate display voltage from 3.3V internally
     if (!display.begin(SSD1306_SWITCHCAPVCC)) {
         Serial.println(F("SSD1306 allocation failed."));
         // Don't proceed after that
         for (;;) { }
     }
 
-    // Rotate display by 180
+    // Rotate display by 180 degree
     display.setRotation(2);
     // Clear display screen
     display.clearDisplay();
