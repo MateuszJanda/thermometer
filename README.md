@@ -18,6 +18,8 @@ For SSD1306 display:
 - [Adafruit SSD1306](https://www.arduino.cc/reference/en/libraries/adafruit-ssd1306/) - [https://github.com/adafruit/Adafruit_SSD1306](https://github.com/adafruit/Adafruit_SSD1306)
 
 # References
+- [Arduino SPI Functions/Communication](https://www.arduino.cc/reference/en/language/functions/communication/spi/)
+- [Arduino & Serial Peripheral Interface (SPI)](https://docs.arduino.cc/learn/communication/spi/)
 - [SSD1306 data sheet](https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf)
 - [DS18B20 data sheet](https://download.kamami.pl/p572557-DS18B20.pdf)
 - [WaveShare 0.96inch OLED (B)](https://www.waveshare.com/wiki/0.96inch_OLED_%28B%29#User_Guides_for_Arduino)
