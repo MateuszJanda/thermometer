@@ -23,7 +23,7 @@ For SSD1306 display:
 
 ## SPI for 4-wire OLED WaveShare 0.96inch (SSD1306)
 
-Arduino UNO R3 has one Serial Peripheral Interface (SPI) controller with predefined pins.
+Arduino UNO R3 has one Serial Peripheral Interface (SPI) controller with predefined pins. In this case CIPO (D12) is not used.
 
 Arduino Pins | Name | Other common names | [Description](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface)
 ------------ | ---- | ------------------ | ---
@@ -45,14 +45,17 @@ CS | CS (Chip select, low active) | D10
 D/C | Command signal, low level for command, high level for data | D7
 RES | Reset signal, low active | D8
 
+## 1-Wire for Digital Thermometer (DS18B20)
+
+...
+
+# References
+
 - [Arduino SPI Functions/Communication](https://www.arduino.cc/reference/en/language/functions/communication/spi/)
 - [Arduino & Serial Peripheral Interface (SPI)](https://docs.arduino.cc/learn/communication/spi/)
 - [Arduino UNO R3 pinouts](https://docs.arduino.cc/resources/pinouts/A000066-full-pinout.pdf)
 - [Arduino UNO R3 data sheet](https://docs.arduino.cc/resources/datasheets/A000066-datasheet.pdf)
 - [Arduino UNO - co to jest?](https://forbot.pl/blog/leksykon/arduino-uno)
-
-# References
-
 - [SSD1306 data sheet](https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf)
 - [DS18B20 data sheet](https://download.kamami.pl/p572557-DS18B20.pdf)
 - [WaveShare 0.96inch OLED (B)](https://www.waveshare.com/wiki/0.96inch_OLED_%28B%29#User_Guides_for_Arduino)
