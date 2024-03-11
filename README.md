@@ -10,6 +10,7 @@ A simple thermometer (DS18B20 on 1-Wire) and a display (SSD1306 on SPI) controll
 # Setup
 
 Install required libraries.
+
 In Arduino IDE (2.3.1) | Sketch | Include Library | Manage Libraries...
 
 For DS18B20 thermometer:
