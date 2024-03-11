@@ -2,6 +2,10 @@
 
 A simple thermometer (DS18B20 on 1-Wire) and a display (SSD1306 on SPI) controlled by Arduino.
 
+<p align="center">
+<img src="./gallery/thermometer.jpg" width="650"/>
+</p>
+
 # Hardware
 
 - DS18B20 Programmable Resolution 1-Wire Digital Thermometer
